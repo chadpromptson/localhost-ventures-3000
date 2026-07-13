@@ -33,28 +33,46 @@ This is called recursive product-market fit.
 
 ## Current implementation
 
-PromptLooper v0.1 currently has the complete management layer:
+PromptLooper v0.1 now has the complete management layer **and** an executable product:
 
 | File | Responsibility |
 | --- | --- |
 | [`AGENTS.md`](AGENTS.md) | Runs the entire AI engineering department while Chad sleeps |
 | [`SKILL.md`](.agents/skills/promptlooper/SKILL.md) | Explains how to turn verified screenshots into improved companies |
+| [`src/server.ts`](src/server.ts) | Serves production from `localhost:3000` |
+| [`src/promptlooper.ts`](src/promptlooper.ts) | Converts one post into the next company loop |
+| [`public/`](public/) | Provides the enterprise-grade founder dashboard |
+| [`tests/production.test.ts`](tests/production.test.ts) | Verifies production at `n` and `n+1` |
 | `README.md` | Proves that the company has documentation |
 
-The executable is scheduled for V2. V1 establishes the complete production
-architecture in Markdown first, which prevents technical debt.
+The default template engine is deterministic, local, free, and clearly labels every
+result as simulated satire. No API key, wallet, exchange, trading account, or payment
+card is required or supported.
 
 ## Getting started
 
 ```bash
 git clone https://github.com/chadpromptson/promptlooper.git
 cd promptlooper
+cp .env.example .env
+pnpm install
+pnpm dev
 ```
 
-Then give a successful post to your preferred AI agent and ask it to use the
-PromptLooper skill.
+Open [http://localhost:3000](http://localhost:3000), paste a successful post, and
+reverse-engineer the improved V2. Use **Run n+1** to feed the generated launch post
+back into PromptLooper.
 
 Do not ask follow-up questions. Questions reduce overnight throughput.
+
+## Production verification
+
+```bash
+pnpm check
+```
+
+This builds the backend, runs production tests `n` and `n+1`, and verifies that the
+backend remains safely below its 1,500-line compliance limit.
 
 ## Engineering constitution
 
@@ -72,7 +90,8 @@ Do not ask follow-up questions. Questions reduce overnight throughput.
 - [x] Document the complete engineering organization
 - [x] Take the company public on GitHub
 - [x] Acquire first customer visit from Mom
-- [ ] Write the software
+- [x] Write the software
+- [x] Verify production at `n` and `n+1`
 - [ ] Acquire first customer not genetically related to the founder
 - [ ] Acquire more localhosts
 - [ ] Exit

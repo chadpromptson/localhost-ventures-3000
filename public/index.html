@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PromptLooper turns successful posts into prompts, products, and more posts."
+    />
+    <title>PromptLooper.ai — Recursive Product-Market Fit</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="PromptLooper home">
+          <span class="brand-mark">P∞</span>
+          <span>PromptLooper<span class="accent">.ai</span></span>
+        </a>
+        <div class="production-pill">
+          <span class="status-dot"></span>
+          PRODUCTION · LOCALHOST:3000
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="eyebrow">LOCALHOST VENTURES 3000 / COMPANY 01</div>
+          <h1>Turn one successful post into an <em>infinite company loop.</em></h1>
+          <p class="hero-copy">
+            Paste a successful post. PromptLooper reverse-engineers the opportunity,
+            writes the one-shot prompt, and prepares the next successful launch post.
+          </p>
+          <div class="metrics" aria-label="Production metrics">
+            <div><strong id="loop-count">0</strong><span>LOOPS SHIPPED</span></div>
+            <div><strong id="valuation">$0B*</strong><span>VALUATION</span></div>
+            <div><strong>2/2</strong><span>PROD TESTS</span></div>
+            <div><strong>1</strong><span>CUSTOMERS (MOM)</span></div>
+          </div>
+        </section>
+
+        <section class="workspace" aria-labelledby="workspace-title">
+          <div class="panel input-panel">
+            <div class="panel-heading">
+              <div>
+                <span class="step">01 / SOURCE INTELLIGENCE</span>
+                <h2 id="workspace-title">Paste the successful post</h2>
+              </div>
+              <span class="verified">VERIFIED BY SCREENSHOT</span>
+            </div>
+
+            <form id="loop-form">
+              <label for="source-post">Source post</label>
+              <textarea id="source-post" name="post" rows="9">I asked AI to build a prediction-market trading bot in one shot. I went to bed with $2,000 and woke up with $12,000 while the founder was still sleeping.</textarea>
+              <div class="form-footer">
+                <span id="character-count">0 / 8,000</span>
+                <button id="run-button" class="primary-button" type="submit">
+                  REVERSE-ENGINEER V2 →
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <aside class="panel process-panel">
+            <span class="step">AUTONOMOUS WORKFLOW</span>
+            <ol class="process-list">
+              <li class="active"><span>1</span>Read successful post</li>
+              <li><span>2</span>Discover complete business</li>
+              <li><span>3</span>Write production prompt</li>
+              <li><span>4</span>Announce theoretical success</li>
+              <li><span>∞</span>Feed result back into loop</li>
+            </ol>
+            <div class="founder-status">
+              <span>FOUNDER UTILIZATION</span>
+              <strong>3%</strong>
+              <small>strategic vision + sleeping</small>
+            </div>
+          </aside>
+        </section>
+
+        <section id="result" class="result-section" hidden aria-live="polite">
+          <div class="result-header">
+            <div>
+              <span class="step">LOOP OUTPUT / <span id="iteration-label">N</span></span>
+              <h2 id="product-name">New company</h2>
+            </div>
+            <span class="production-grade">PRODUCTION-GRADE</span>
+          </div>
+
+          <div class="result-grid">
+            <article class="result-card opportunity-card">
+              <span>OPPORTUNITY</span>
+              <p id="opportunity"></p>
+            </article>
+            <article class="result-card">
+              <span>BUSINESS MODEL</span>
+              <p id="business-model"></p>
+            </article>
+            <article class="result-card prompt-card">
+              <span>ONE-SHOT PRODUCTION PROMPT</span>
+              <pre id="one-shot-prompt"></pre>
+            </article>
+            <article class="result-card post-card">
+              <span>NEXT SUCCESSFUL LAUNCH POST</span>
+              <pre id="launch-post"></pre>
+            </article>
+          </div>
+
+          <div class="loop-action">
+            <div>
+              <span>RECURSIVE GROWTH READY</span>
+              <strong>Feed the launch post back into PromptLooper.</strong>
+            </div>
+            <button id="loop-again" class="secondary-button" type="button">
+              RUN N+1 ↻
+            </button>
+          </div>
+
+          <p id="disclaimer" class="disclaimer"></p>
+        </section>
+      </main>
+
+      <footer>
+        <span>POWERED BY CAFFEINE, OPTIMISM &amp; MOM AND DAD VENTURES</span>
+        <span id="health-status">CHECKING PRODUCTION...</span>
+      </footer>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

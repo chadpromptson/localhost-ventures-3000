@@ -1,0 +1,24 @@
+{
+  "name": "promptlooper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Turn successful posts into prompts, products, and more successful posts.",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "tsx --test tests/production.test.ts",
+    "backend:lines": "node scripts/count-backend-lines.mjs",
+    "check": "pnpm build && pnpm test && pnpm backend:lines"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "packageManager": "pnpm@11.9.0",
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "tsx": "^4.23.0",
+    "typescript": "^7.0.2"
+  }
+}
