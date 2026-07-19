@@ -29,6 +29,13 @@ extremely confident founder.
 | [RecLoop.AI](apps/recloop/README.md) | Feeds successful results into the next improvement loop | Company foundation; executable pending |
 | [SleepShip.AI](apps/sleepship/README.md) | Ships complete products while the founder sleeps | Company foundation; executable pending |
 
+## AI cofounder and engineering department
+
+[Prompt #42](artifacts/prompt-42/README.md) is the AI cofounder and complete
+engineering department of Localhost Ventures 3000. Its original One-Shot Optimist
+configuration is preserved as the immutable [System Prompt
+v0.1](artifacts/prompt-42/system-prompt-v0.1.md).
+
 ## How the factory works
 
 Every company performs one specialized part of the proven overnight-success process:
