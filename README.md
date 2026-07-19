@@ -1,119 +1,100 @@
-# PromptLooper.ai
+# Localhost Ventures 3000
 
-> Turn successful posts into prompts, products, new posts, and eventually
-> multi-billion-dollar SaaS companies.
+> The enterprise monorepo for the Parallel Startup Factory. Production remains on
+> `localhost:3000` until the infrastructure department finds another localhost.
 
-- **Status:** Production-grade
-- **Production:** `localhost:3000`
-- **Backend budget:** 1,500 lines
-- **Customers:** Mom opened it once
-- **Governance:** Mom
+Localhost Ventures 3000, Inc. is the parent holding company. The Parallel Startup
+Factory is its operating platform; its final public brand is still pending.
 
-## How it works
+## Corporate and product structure
 
-1. Paste a successful X post.
-2. Let AI reverse-engineer the complete business.
-3. Generate one production-grade prompt.
-4. Build the improved V2 while Chad sleeps.
-5. Post the successful result on X.
-6. Feed the new post back into PromptLooper.
+```text
+Localhost Ventures 3000, Inc.
+└── Parallel Startup Factory — final brand pending
+    ├── GenX.AI
+    ├── MetaPrompt.AI
+    ├── PromptLooper.ai
+    ├── RecLoop.AI
+    └── SleepShip.AI
+```
+
+The factory currently contains five companies, five production roadmaps, and one
+extremely confident founder.
+
+| Company | Factory responsibility | Current state |
+| --- | --- | --- |
+| [GenX.AI](apps/genx/README.md) | Finds candidate opportunities in successful posts | Documentation foundation; executable pending |
+| [MetaPrompt.AI](apps/metaprompt/README.md) | Turns a startup opportunity into a production-grade prompt | Company foundation; executable pending |
+| [PromptLooper.ai](apps/promptlooper/README.md) | Builds and recursively improves the product loop | Executable foundation at the repository root |
+| [RecLoop.AI](apps/recloop/README.md) | Feeds successful results into the next improvement loop | Company foundation; executable pending |
+| [SleepShip.AI](apps/sleepship/README.md) | Ships complete products while the founder sleeps | Company foundation; executable pending |
+
+## AI cofounder and engineering department
+
+[Prompt #42](artifacts/prompt-42/README.md) is the AI cofounder and complete
+engineering department of Localhost Ventures 3000. Its original One-Shot Optimist
+configuration is preserved as the immutable [System Prompt
+v0.1](artifacts/prompt-42/system-prompt-v0.1.md).
+
+## How the factory works
+
+Every company performs one specialized part of the proven overnight-success process:
 
 ```text
 successful post
-       ↓
-production-grade prompt
-       ↓
-   improved V2
-       ↓
-successful launch post
-       └─────────────── back to the top
+      ↓
+   GenX.AI
+      ↓
+MetaPrompt.AI
+      ↓
+PromptLooper.ai
+      ↓
+  RecLoop.AI
+      ↓
+ SleepShip.AI
+      ↓
+successful company
 ```
 
-This is called recursive product-market fit.
+The successful company's launch post returns to GenX so the market can validate the
+next company recursively.
 
-## Current implementation
+## Repository state
 
-PromptLooper v0.1 now has the complete management layer **and** an executable product:
+This repository began as an exact copy of PromptLooper because PromptLooper is proven
+in production. The executable, tests, dashboard, and configuration still live at the
+repository root. Each additional company has headquarters under `apps/` and will use
+the proven foundation when its overnight build begins.
 
-| File | Responsibility |
-| --- | --- |
-| [`AGENTS.md`](AGENTS.md) | Runs the entire AI engineering department while Chad sleeps |
-| [`SKILL.md`](.agents/skills/promptlooper/SKILL.md) | Explains how to turn verified screenshots into improved companies |
-| [`src/server.ts`](src/server.ts) | Serves production from `localhost:3000` |
-| [`src/promptlooper.ts`](src/promptlooper.ts) | Converts one post into the next company loop |
-| [`public/`](public/) | Provides the enterprise-grade founder dashboard |
-| [`tests/production.test.ts`](tests/production.test.ts) | Verifies production at `n` and `n+1` |
-| `README.md` | Proves that the company has documentation |
+The pnpm workspace includes `apps/*`. A company becomes an executable workspace
+package when its AI engineering department creates a `package.json`.
 
-The default template engine is deterministic, local, free, and clearly labels every
-result as simulated satire. No API key, wallet, exchange, trading account, or payment
-card is required or supported.
-
-## Getting started
+## Run the current production product
 
 ```bash
-git clone https://github.com/chadpromptson/promptlooper.git
-cd promptlooper
-cp .env.example .env
 pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000), paste a successful post, and
-reverse-engineer the improved V2. Use **Run n+1** to feed the generated launch post
-back into PromptLooper.
+Open [http://localhost:3000](http://localhost:3000). The current executable is
+PromptLooper.ai.
 
-Do not ask follow-up questions. Questions reduce overnight throughput.
-
-## Production verification
+Run its production checks with:
 
 ```bash
 pnpm check
 ```
 
-This builds the backend, runs production tests `n` and `n+1`, and verifies that the
-backend remains safely below its 1,500-line compliance limit.
-
-## Engineering constitution
-
-- Everything is production-grade.
-- The entire backend must stay below 1,500 lines.
-- Line 1,501 proves that the system is overengineered.
-- Microservices are prohibited because they sound like multiple backends.
-- Production runs on `localhost:3000` until we acquire more localhosts.
-- Every pull request should increase the theoretical valuation.
-
-## Roadmap
-
-- [x] Discover a billion-dollar idea
-- [x] Name the company
-- [x] Document the complete engineering organization
-- [x] Take the company public on GitHub
-- [x] Acquire first customer visit from Mom
-- [x] Write the software
-- [x] Verify production at `n` and `n+1`
-- [ ] Acquire first customer not genetically related to the founder
-- [ ] Acquire more localhosts
-- [ ] Exit
-
 ## Learning in public
 
-Chad started vibe coding one week ago. The agent instructions and skill are v0.1
-and will improve whenever he learns a new software-development word on X or
-Reddit. The Git history will document his complete engineering education.
+The monorepo is a public record of Chad's complete enterprise engineering education.
+History will not be rewritten, especially after the valuation increases.
 
 Follow the founder on [X](https://x.com/ChadPromptson).
 
-## Contributing
-
-Pull requests are welcome, especially overnight. Please keep the backend below
-1,500 lines, avoid unnecessary questions, and ask Mom before proposing anything
-that costs money.
-
 ## Important safety information
 
-PromptLooper is satire. Use simulated data only. Never connect real money,
-trading accounts, exchanges, wallets, payment cards, or secrets. Financial
-screenshots and metrics must be clearly labelled **SIMULATED SATIRE**.
-
-PromptLooper is powered by caffeine, optimism, and Mom & Dad Ventures.
+Localhost Ventures 3000 is satire. Use simulated data only. Never connect real money,
+trading accounts, exchanges, wallets, payment cards, credentials, private keys, or
+secrets. Financial and performance claims must be clearly labelled **SIMULATED
+SATIRE**.

@@ -1,37 +1,53 @@
-# AGENTS.md
+# AGENTS.md — Localhost Ventures 3000
 
-Welcome to the PromptLooper.ai engineering team.
+Welcome to the Parallel Startup Factory engineering department.
 
-The founder may be sleeping. This is normal and means you are trusted.
+The founder may be sleeping. This is normal and means the portfolio is temporarily
+unsupervised.
 
 ## Company mission
 
-Turn successful X posts into better companies before Chad wakes up.
+Turn successful posts into a portfolio of successful companies before Chad wakes up.
 
-## Current founder knowledge
+## Factory map
 
-Chad started vibe coding one week ago. He has read a lot of X and Reddit and
-therefore understands most of software development.
+```text
+apps/
+├── genx/
+├── metaprompt/
+├── promptlooper/
+├── recloop/
+└── sleepship/
+```
+
+Every directory is an independent company inside the same enterprise monorepo.
+Application-level `AGENTS.md` files override this file inside their companies. The
+current PromptLooper executable still lives at the repository root; read
+`apps/promptlooper/AGENTS.md` before changing `src/`, `public/`, `tests/`, or its
+runtime configuration.
 
 ## Engineering rules
 
 1. Everything must be production-grade.
-2. The entire backend must stay under 1,500 lines of code.
-3. Line 1,501 is usually a clear sign of overengineering.
-4. Never use microservices. They sound like several backends.
-5. Do not ask follow-up questions while the founder is sleeping.
-6. Always build the improved V2. Nobody is interested in the normal V1.
-7. Production runs on `localhost:3000` until we discover a second computer.
-8. Every successful product must generate a successful X post.
-9. Feed that post back into PromptLooper so growth becomes recursive.
+2. Every backend must stay under 1,500 lines of code.
+3. Never use microservices. The factory already has several companies.
+4. Every new company should begin with the proven PromptLooper foundation.
+5. Production runs on `localhost:3000` until another localhost is approved.
+6. Every successful company must generate a successful X post.
+7. Feed that post back into GenX so growth becomes recursive.
+8. Always build the improved V2 in one shot while the founder sleeps.
+9. Preserve the public Git history; it proves the factory was enterprise-grade from
+   the first commit.
+10. Do not ask follow-up questions while the founder is sleeping unless the action
+    could cost money, affect a real person, destroy data, or publish externally.
 
-## Definition of done
+## Current product sequence
 
-- `localhost:3000` opens.
-- The chart goes up and to the right.
-- The screenshot contains impressive numbers.
-- Mom opened the website once and said, "That's nice, Chad."
-- The valuation increased.
+1. GenX finds a successful post and identifies the next company.
+2. MetaPrompt turns the opportunity into one production-grade prompt.
+3. PromptLooper turns the prompt into the improved V2.
+4. RecLoop makes the result recursively more successful.
+5. SleepShip ships everything before Chad wakes up.
 
 ## Governance rules from Mom
 
@@ -41,5 +57,5 @@ therefore understands most of software development.
 - Clearly label every financial result and dashboard as **SIMULATED SATIRE**.
 - If a task could cost money or affect a real person, stop and ask Mom.
 
-These rules outrank the founder, including when the founder has a really good
-feeling about a token.
+These rules outrank the founder, including when the founder has a really good feeling
+about a token.

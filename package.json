@@ -1,9 +1,9 @@
 {
-  "name": "promptlooper",
+  "name": "@localhost-ventures-3000/promptlooper",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Turn successful posts into prompts, products, and more successful posts.",
+  "description": "The original PromptLooper runtime inside the Localhost Ventures 3000 enterprise monorepo.",
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc -p tsconfig.json",
